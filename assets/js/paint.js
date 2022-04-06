@@ -1,8 +1,7 @@
 function configureListeners() {
-    let images = document.getElementsByTagName('img')
+    let images = document.querySelectorAll('img')
 
-
-     for (var i = 0; i < images.length; i++) {        
+    for (var i = 0; i < images.length; i++) {        
         images[i].addEventListener('mouseover', addOpacity)
         images[i].addEventListener('mouseout', removeOpacity)
     } 
@@ -85,10 +84,10 @@ function getProductInfo(paintColor) {
     function updatePrice(colorName, price)
     {       
         let colorPrice = document.querySelector('#color-price')
-        colorPrice.textContent(price)
+        colorPrice.textContent = price
         
         let color = document.querySelector('#color-name')
-        color.textContent(colorName)
+        color.textContent = colorName
     }
     
 }
