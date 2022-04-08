@@ -38,4 +38,13 @@ body{
     height: 5.5em;
   }
 
-  
+  .paint-card {
+    height: 200px;
+    width: 220px;
+  }
+  .paint-cards {
+    display: flex;
+    flex-wrap: wrap;
+    width: 60vw;
+    justify-content: center;
+  }
